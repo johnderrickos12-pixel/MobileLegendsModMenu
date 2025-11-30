@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Collapsed view -->
+    <FrameLayout
+        android:id="@+id/collapsed_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:alpha="0.8" />
+
+    </FrameLayout>
+
+    <!-- Expanded view -->
+    <LinearLayout
+        android:id="@+id/expanded_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/collapse_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collapse"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Legends Mod"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/no_skill_cooldown_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Skill Cooldown"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/wall_hack_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wall Hack"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Add more exploit buttons here -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speed Hack (Placeholder)"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map Hack (Placeholder)" />
+
+    </LinearLayout>
+
+</FrameLayout>
